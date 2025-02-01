@@ -21,7 +21,7 @@ images['sample'] = sample;
       <ul class="text-xs flex gap-4 flex-wrap items-center">
         {
           Object.keys(teamMembers).map((tabName) => {
-            const displayString = tabName === 'faculty' ? 'Faculty' : `${tabName}-${Number(tabName) + 1}`;
+            const displayString = `${tabName}-${Number(tabName) + 1}`;
             return (
               <li>
                 <input
@@ -217,7 +217,7 @@ images['sample'] = sample;
     });
   }
 
-  radioButtons.forEach((radio: any) => {
+  radioButtons.forEach((radio) => {
     radio.addEventListener('change', () => {
       if (radio.checked) {
         updatePanel(radio.value);
@@ -225,7 +225,10 @@ images['sample'] = sample;
     });
   });
 
-  updatePanel('faculty');
+  radioButtons.forEach((radio) => {
+    radio.checked = true;
+    updatePanel(radio.value);
+  });
 
   const cards = document.querySelectorAll('.card');
 
@@ -239,7 +242,7 @@ images['sample'] = sample;
     },
     {
       threshold: 0.1,
-    }
+    },
   );
 
   cards.forEach((card) => {

@@ -222,8 +222,7 @@ export const teamMembers = {
       position: 'Jt Social Media Coordinator',
       image: 'Rachana_joint social media coordinator',
     },
-  ],
-  "faculty":aceFaculty,
+  ]
 };
 
 import KarthikImage from '@assets/images/developers/karthik.webp';

@@ -44,19 +44,19 @@ The **Association of Computer Engineers (ACE)** at Nitte is a student-driven org
 3. Install dependencies:
 
     ```bash
-    npm install
+    bun i
     ```
 
 4. Run the development server:
 
     ```bash
-    npm run dev
+    bun run dev
     ```
 
 5. Open your browser and visit:
 
     ```
-    http://localhost:3000
+    http://localhost:4321
     ```
 
 ---

@@ -5,7 +5,7 @@ import { getAllEventsForUser } from 'utils/events';
 
 // Fetch all events
 const events = await getAllEventsForUser();
-
+console.log(events)
 if (!events) {
   Astro.redirect('/');
 }
