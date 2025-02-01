@@ -21,7 +21,7 @@ images['sample'] = sample;
       <ul class="text-xs flex gap-4 flex-wrap items-center">
         {
           Object.keys(teamMembers).map((tabName) => {
-            const displayString = `${tabName}-${Number(tabName) + 1}`;
+            const displayString = tabName === 'faculty' ? 'Faculty' : `${tabName}-${Number(tabName) + 1}`;
             return (
               <li>
                 <input
@@ -225,10 +225,7 @@ images['sample'] = sample;
     });
   });
 
-  radioButtons.forEach((radio) => {
-    radio.checked = true;
-    updatePanel(radio.value);
-  });
+  updatePanel('faculty');
 
   const cards = document.querySelectorAll('.card');
 
