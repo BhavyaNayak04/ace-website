@@ -15,9 +15,8 @@ export const aceFaculty = [
   { name: 'Dr. Pradeep Kanchan', position: 'Faculty Co-ordinator', image: 't18' },
   { name: 'Dr. Keerthana B Chigateri', position: 'Faculty Co-ordinator', image: 't19' },
   { name: 'Mr. Pawan Hegde', position: 'Faculty Co-ordinator', image: 't25' },
-  { name: 'Mr. Ashwin Shenoy', position: 'Faculty Co-ordinator', image: 't32' },
+  { name: 'Dr. Ashwin Shenoy', position: 'Faculty Co-ordinator', image: 't32' },
 ];
-
 
 export const faculty = [
   { name: 'Dr. Niranjan N. Chiplunkar', position: 'Principal', image: 'prin' },
@@ -223,7 +222,7 @@ export const teamMembers = {
       image: 'Rachana_joint social media coordinator',
     },
   ],
-  "faculty":aceFaculty
+  faculty: aceFaculty,
 };
 
 import KarthikImage from '@assets/images/developers/karthik.webp';
